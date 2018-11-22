@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="js2.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <style>
+
+  #titulo h1{
+    font-family: 'roboto', sans-serif;
+    color: #555;
+  }
+
+  #resposta {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #resposta h1{
+    font-family: 'roboto', sans-serif;
+    color: #555;
+  }
+
+  #resposta h2{
+    font-family: 'roboto', sans-serif;
+    color: #555;
+    font-size: 70px;
+  }
+
+  </style>
+
+</head>
+<body>
+  <div class="container-fluid bg-info">
+    <div id="titulo">
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-primary p-4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="modal-content" id="app" style="text-align: center">
+        <div v-for="(question, index) in quiz.questions">
+            <h1>Bem vindo ao aplicativo</h1>
+            <h2>Tutorial</h2>
+          <div v-show="index === questionIndex ">
+            <div class="modal-header" >
+            <h1>Olá bem vindo</h1>
+
+        </div>
+        <div class="">
+          <h2>ao apertar o botão continuar logo abaixo do tutorial você irá encontrar uma tela igual na imagem abaixo</h2>
+        </div>
+        <div class="">
+          <img src="imagens/imag1.png" width="800" height="500" >
+        </div>
+        <div class="">
+          <br>
+         <h2>Na parte marcada em vermelho você poderá encontrar os conteúdos para responder o quiz e os quizes</h2>
+        </div>
+        <div class="">
+          <img src="imagens/imag2.png" width="800" height="500" >
+        </div>
+        <br>
+        <div class="">
+          <h2>Como pode observar você tem uma linha onde os módulos com os videos ficam, e uma linha com os módulos de quiz</h2>
+        </div>
+        <br>
+        <div class="">
+          <img src="imagens/imag3.png" width="800" height="500" >
+        </div>
+        <br>
+        <div class="">
+          <h2>Lembre-se, quando fazer um módulo de videos como "Gestão", O quiz com o conteúdo de gestão será o "Gestão" também, Ok?</h2>
+        </div>
+        <div class="">
+          <img src="imagens/imag4.png" width="800" height="500" >
+        </div>
+        <br>
+        <div class="">
+          <h2>Toda vez que for responder uma pergunta, clique em cima da resposta desejada e clique depois em proximo</h2>
+        </div>
+      </div>
+    </div>
+    <a href="pages/pag1video.html"><button type="button" name="button " class="btn btn-lg btn-info" href=""><h2>Continuar</h2></button></a>
+      </div>
+        </div>
+  </body>
+  </html>
